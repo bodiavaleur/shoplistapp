@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@mixin font($size, $color) {
+  font: {
+    family: 'Font Awesome 5 Free', 'Open Sans', Arial, Helvetica, sans-serif;
+    size: $size;
+    weight: 600;
+  }
+  color: $color;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(238, 236, 238);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  height: 80%;
+  width: 40%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr;
+  box-shadow: 0 0 40px 10px rgb(207, 207, 207);
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 20px;
+  background-color: white;
+
+  .search {
+    grid-area: 1 / 1 / auto / auto;
+  }
+
+  .items-list {
+    grid-area: 2 / 1 / auto / auto;
+  }
+
+  .button-add {
+    grid-area: 3 / 1 / auto / auto;
+  }
+}
+
+.search {
+  background: rgb(245, 245, 249);
+  border-radius: 20px;
+  padding: 1vw 1vw;
+  &::placeholder {
+    color: rgb(186, 169, 184);
+  }
+}
+
+.search-full {
+  width: 60vw;
+  height: 5vh;
+  @include font(3vw, rgb(65, 75, 105));
+}
+
+.search-small {
+  width: 30vw;
+  @include font(1.5vw, rgb(65, 75, 105));
+}
+
+.container-full {
+  width: 60vw;
+  height: 5vh;
+}
+
+.button-add {
+  @include font(1.5vw, rgb(70, 85, 230));
+}
+
+.button-cancel {
+  margin-left: 1vw;
+  transition: all 0.3s linear;
+  padding: 0.3vw 0.3vw;
+  border-radius: 10px;
+  @include font(1.5vw, rgb(186, 169, 184));
+
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+.items-list {
+  list-style: none;
+  width: 35vw;
+  height: 50vh;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .listitem {
+    border-radius: 10px;
+    height: 5vh;
+    padding: 1vw 1vw;
+    transition: all 0.2s ease-out;
+    @include font(2vw, rgb(65, 75, 105));
+
+    button {
+      background: none;
+      margin-right: 1vh;
+      @include font(3vh, rgb(22, 26, 36));
+    }
+
+    &:hover {
+      background-color: rgba(235, 241, 255, 0.7);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .app-container {
+    width: 60%;
+  }
+
+  .search-full {
+    @include font(3vw, rgb(65, 75, 105));
+  }
+
+  .search-small {
+    width: 47vw;
+    @include font(3vw, rgb(65, 75, 105));
+  }
+
+  .button-add {
+    @include font(3vw, rgb(70, 85, 230));
+  }
+
+  .button-cancel {
+    border-radius: 10px;
+    @include font(2vw, rgb(186, 169, 184));
+  }
+
+  .items-list {
+    width: 50vw;
+
+    .listitem {
+      height: 5vh;
+      padding: 2vw 2vw;
+      @include font(3vw, rgb(65, 75, 105));
+
+      button {
+        margin-right: 2vw;
+        @include font(vw, rgb(65, 75, 105));
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    height: 90%;
+  }
+
+  .container-full {
+    width: 80vw;
+    height: 7vh;
+  }
+
+  .search-full {
+    height: 7vh;
+    width: 80vw;
+    @include font(6vw, rgb(65, 75, 105));
+  }
+
+  .search-small {
+    width: 70vw;
+    height: 7vh;
+    margin-top: 2vh;
+    @include font(5vw, rgb(65, 75, 105));
+  }
+
+  .button-add {
+    background: none;
+    @include font(5vw, rgb(70, 85, 230));
+  }
+
+  .button-cancel {
+    background: none;
+    @include font(4vw, rgb(186, 169, 184));
+  }
+
+  .items-list {
+    width: 85vw;
+    height: 60vh;
+
+    .listitem {
+      height: 5vh;
+      padding: 3vw 3vw;
+      @include font(5vw, rgb(65, 75, 105));
+
+      button {
+        margin-right: 2vw;
+        @include font(6vw, rgb(65, 75, 105));
+      }
+    }
+  }
+}
