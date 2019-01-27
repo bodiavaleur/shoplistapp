@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/shoplistapp/static/js/runtime~main.1e606ba8.js"
   },
   {
-    "revision": "c057a3a8e87620e17d5d",
-    "url": "/shoplistapp/static/js/main.c057a3a8.chunk.js"
+    "revision": "dd7766b6a749725e9b4a",
+    "url": "/shoplistapp/static/js/main.dd7766b6.chunk.js"
   },
   {
     "revision": "7c3aec79f3ae62290828",
     "url": "/shoplistapp/static/js/1.7c3aec79.chunk.js"
   },
   {
-    "revision": "c057a3a8e87620e17d5d",
+    "revision": "dd7766b6a749725e9b4a",
     "url": "/shoplistapp/static/css/main.4f476dbc.chunk.css"
   },
   {
-    "revision": "06261bb551e58bff8d9dcd0fe8f76e86",
+    "revision": "d92c0d8e03c8675099acc1333fd2ddf4",
     "url": "/shoplistapp/index.html"
   }
 ];

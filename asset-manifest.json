@@ -1,13 +1,13 @@
 {
   "main.css": "/shoplistapp/static/css/main.4f476dbc.chunk.css",
-  "main.js": "/shoplistapp/static/js/main.c057a3a8.chunk.js",
-  "main.js.map": "/shoplistapp/static/js/main.c057a3a8.chunk.js.map",
+  "main.js": "/shoplistapp/static/js/main.dd7766b6.chunk.js",
+  "main.js.map": "/shoplistapp/static/js/main.dd7766b6.chunk.js.map",
   "static/js/1.7c3aec79.chunk.js": "/shoplistapp/static/js/1.7c3aec79.chunk.js",
   "static/js/1.7c3aec79.chunk.js.map": "/shoplistapp/static/js/1.7c3aec79.chunk.js.map",
   "runtime~main.js": "/shoplistapp/static/js/runtime~main.1e606ba8.js",
   "runtime~main.js.map": "/shoplistapp/static/js/runtime~main.1e606ba8.js.map",
   "static/css/main.4f476dbc.chunk.css.map": "/shoplistapp/static/css/main.4f476dbc.chunk.css.map",
   "index.html": "/shoplistapp/index.html",
-  "precache-manifest.bbecd9d5e183a00b5a6732bb7bf7d94b.js": "/shoplistapp/precache-manifest.bbecd9d5e183a00b5a6732bb7bf7d94b.js",
+  "precache-manifest.7b76dde95511c606d0d7dbbb74d19f80.js": "/shoplistapp/precache-manifest.7b76dde95511c606d0d7dbbb74d19f80.js",
   "service-worker.js": "/shoplistapp/service-worker.js"
 }
